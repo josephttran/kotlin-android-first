@@ -4,4 +4,5 @@
     <string name="Left_Button">Toast</string>
     <string name="Center_Button">Count</string>
     <string name="Right_Button">Random</string>
+    <string name="random_heading">Here is a random number between 0 and %1d.</string>
 </resources>
