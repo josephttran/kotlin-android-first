@@ -3,8 +3,8 @@ package com.example.firstappkotlin
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.textView
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,14 +19,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun countMe(view: View) {
-        //Get the text view
-        val showCountTextView = findViewById(R.id.textView) as TextView
-        val countString = showCountTextView.text.toString()
+        //Get value in text view
+        val countString = textView.text.toString()
 
         var count: Int = Integer.parseInt(countString)
         count++
 
         //Display new value in the text view
-        showCountTextView.text = count.toString()
+        textView.text = count.toString()
     }
 }
