@@ -1,6 +1,6 @@
 # Learn to build Android App in Kotlin
 
-First android app in kotlin from codelabs.
+First Android app in Kotlin from codelabs.
 An interactive app with text and three button.
 The first button shows a pop-up message.
 The second button update the count value and display it in the text view.
