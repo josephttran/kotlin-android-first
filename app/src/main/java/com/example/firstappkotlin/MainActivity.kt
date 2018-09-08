@@ -1,5 +1,6 @@
 package com.example.firstappkotlin
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -27,5 +28,18 @@ class MainActivity : AppCompatActivity() {
 
         //Display new value in the text view
         textView.text = count.toString()
+    }
+
+    fun randomMe(view: View) {
+        //Create an Intent to start the second activity
+        val randomIntent = Intent(this, SecondActivity::class.java)
+
+        val countString = textView.text.toString()
+        val count = Integer.parseInt(countString)
+
+        //Add count to the extra for the Intent
+        randomIntent.putExtra(SecondActivity.TOTAL_COUNT, count)
+
+        startActivity(randomIntent)
     }
 }
