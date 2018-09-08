@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">First App Kotlin</string>
-    <string name="hello_world_text">Text Changed with @string resource</string>
-    <string name="Left_Button">Left</string>
-    <string name="Center_Button">Center</string>
-    <string name="Right_Button">Right</string>
+    <string name="hello_world_text">0</string>
+    <string name="Left_Button">Toast</string>
+    <string name="Center_Button">Count</string>
+    <string name="Right_Button">Random</string>
 </resources>
